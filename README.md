@@ -22,6 +22,14 @@ This script illustrates how to construct, modify, and query Bayesian networks in
 6. Querying the Network: Setting and querying findings in the network. Revising probabilities in the network based on new evidence.
 
 
+### Outputs:
+
+
+![img1](https://github.com/shaunthom/Probabilistic-Graphical-Modeling-for-Cardiovascular-Disease-Data/assets/134566032/0acf4c8e-9a6b-4f8c-b5fc-78e580c53266)
+
+![img2](https://github.com/shaunthom/Probabilistic-Graphical-Modeling-for-Cardiovascular-Disease-Data/assets/134566032/65b51700-0e4a-4e74-873a-88f1f309ad32)
+
+
 ### What did the Model Showcase:
 
  • The ability of Bayesian networks to model complex dependencies among variables.
