@@ -9,20 +9,32 @@ This script illustrates how to construct, modify, and query Bayesian networks in
 
 ### Main Steps
 
-Network Inference: The script first infers a Bayesian network from the cad1 dataset using the Hill-Climbing (HC) algorithm from the bnlearn package.
+1. Network Inference: The script first infers a Bayesian network from the cad1 dataset using the Hill-Climbing (HC) algorithm from the bnlearn package.
 
-Network Visualization: The inferred network is converted to a graphNEL object from the igraph package and plotted.
+2. Network Visualization: The inferred network is converted to a graphNEL object from the igraph package and plotted.
 
-Block Constraints: The script imposes block constraints on the network, disallowing certain edges based on predefined blocks of variables.
+3. Block Constraints: The script imposes block constraints on the network, disallowing certain edges based on predefined blocks of variables.
 
-Network Refitting with Constraints: The network is then refitted with these constraints using a blacklist of illegal edges.
+4. Network Refitting with Constraints: The network is then refitted with these constraints using a blacklist of illegal edges.
 
-Defining and Plotting a DAG: A Directed Acyclic Graph (DAG) is defined manually and plotted, showcasing another method of network creation.
+5. Defining and Plotting a DAG: A Directed Acyclic Graph (DAG) is defined manually and plotted, showcasing another method of network creation.
 
-Querying the Network:
+6. Querying the Network: Setting and querying findings in the network. Revising probabilities in the network based on new evidence.
 
-Setting and querying findings in the network.
-Revising probabilities in the network based on new evidence.
+
+### What did the Model Showcase:
+
+ • The ability of Bayesian networks to model complex dependencies among variables.
+
+ • The flexibility of BNs in incorporating new information to update beliefs.
+
+ • The practical application of BNs in understanding and visualizing data relationships.
+
+ • The use of constraints to tailor the BN to specific knowledge or assumptions.
+
+### Conclusion:
+
+Through this mini-project, I have successfully demonstrated the capability to construct, visualize, modify, and query Bayesian networks, which are powerful tools for understanding complex probabilistic relationships in data. This project is a robust showcase of applying statistical concepts and programming skills to solve real-world problems in data analysis and probabilistic modeling.
 
 #### Packages Used
 gRain: For probabilistic graphical models.
