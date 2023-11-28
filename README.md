@@ -37,6 +37,7 @@ This script illustrates how to construct, modify, and query Bayesian networks in
 Through this mini-project, I have successfully demonstrated the capability to construct, visualize, modify, and query Bayesian networks, which are powerful tools for understanding complex probabilistic relationships in data. This project is a robust showcase of applying statistical concepts and programming skills to solve real-world problems in data analysis and probabilistic modeling.
 
 #### Packages Used
+
 gRain: For probabilistic graphical models.
 
 Rgraphviz: For plotting graphical models.
