@@ -24,11 +24,15 @@ This script illustrates how to construct, modify, and query Bayesian networks in
 
 ### Outputs:
 
+These diagrams are like maps showing how certain health issues and habits can affect your heart, especially concerning coronary artery disease.
 
 ![img1](https://github.com/shaunthom/Probabilistic-Graphical-Modeling-for-Cardiovascular-Disease-Data/assets/134566032/0acf4c8e-9a6b-4f8c-b5fc-78e580c53266)
 
+The arrows show the direction of influence between these factors. For example, it suggests that "Hyperchol" (high cholesterol) can lead to "CAD" (coronary artery disease), which in turn can lead to "Heartfail" (heart failure). It also shows that factors like smoking and genetics ("Inherit") are directly connected to CAD.
+
 ![img2](https://github.com/shaunthom/Probabilistic-Graphical-Modeling-for-Cardiovascular-Disease-Data/assets/134566032/65b51700-0e4a-4e74-873a-88f1f309ad32)
 
+This diagram is a simplified version, focusing only on the most direct influences on CAD. It strips away the intermediate factors and shows only the main risk factors like "Sex", "Smoker", "Inherit", and "Hyperchol" affecting CAD, and then the outcomes "AngPec" (likely angina pectoris) and "Heartfail".
 
 ### What did the Model Showcase:
 
