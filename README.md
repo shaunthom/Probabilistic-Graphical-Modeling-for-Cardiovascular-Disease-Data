@@ -38,7 +38,11 @@ Through this mini-project, I have successfully demonstrated the capability to co
 
 #### Packages Used
 gRain: For probabilistic graphical models.
+
 Rgraphviz: For plotting graphical models.
+
 gRbase, ggm, gRim: Provide tools for graphical models.
+
 bnlearn: For learning Bayesian networks from data.
+
 igraph: For network analysis and visualization.
