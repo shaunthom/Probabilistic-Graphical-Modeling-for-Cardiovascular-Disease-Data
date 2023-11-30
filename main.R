@@ -40,20 +40,17 @@ plot(net.constr)
 
 plot(net)
 
-### B sub-part
 
 cad.dag <- dag(~ CAD:Sex:Smoker:Inherit:Hyperchol +
                  AngPec:CAD +
                  Heartfail:CAD )
 plot(cad.dag)
 
-### C sub-part
 
 cad.find1<-setFinding(cad.bn , nodes = c("Sex","Hyperchol"),states = c("Female","Yes"))
 getFinding(cad.find1)
 getfinding
 
-### D sub-part
 
 new_evidence <- list()
 new_evidence[["QWave"]] <- "Yes"
