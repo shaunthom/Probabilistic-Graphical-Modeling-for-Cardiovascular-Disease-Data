@@ -61,3 +61,26 @@ pgm_1 <- bn.fit(bn, data = cad1)
 
 revised_cad_probability = cpquery(pgm_1, event = (CAD == 'Yes'), evidence = new_evidence, method = 'lw')
 print(revised_cad_probability)
+
+
+n_bootstraps <- 100
+learned_networks <- vector("list", n_bootstraps)
+
+
+for (i in 1:n_bootstraps) {
+
+  boot_data <- cad1[sample(nrow(cad1), replace = TRUE), ]
+  
+  learned_networks[[i]] <- hc(boot_data)
+}
+
+
+edge_table <- matrix(0, ncol = 2, nrow = 0)
+colnames(edge_table) <- c("Edge", "Frequency")
+
+for (net in learned_networks) {
+  edges <- as.character(amat(net))
+  edge_table <- rbind(edge_table, table(edges))
+}
+
+edge_summary <- aggregate(Freq ~ Var1 + Var2, data = edge_table, sum)
