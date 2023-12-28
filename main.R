@@ -1,4 +1,4 @@
-# Install and load required packages
+
 #install.packages('igraph')
 library(gRain)
 #library(RHugin)
