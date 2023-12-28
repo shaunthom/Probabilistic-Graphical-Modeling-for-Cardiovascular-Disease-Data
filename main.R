@@ -13,7 +13,7 @@ data(cad1, package = "gRbase")
 
 # Checking if data is loaded correctly:
 if (is.null(cad1)) {
-  stop("Data not loaded properly.")
+  stop("Data not loaded properly")
 }
 
 # Error handling for Bayesian Network inference
@@ -22,7 +22,6 @@ tryCatch({
   cad.bn <- hc(cad1)
   net <- as(amat(cad.bn), "graphNEL")
 
-  plot(net)
 
   names(cad1)
   
@@ -41,6 +40,7 @@ tryCatch({
   net.constr <- as(amat(cad.bn2), "graphNEL")
 
   plot(net.constr)
+  plot(net)
 
   cad.dag <- dag(~ CAD:Sex:Smoker:Inherit:Hyperchol +
                    AngPec:CAD +
